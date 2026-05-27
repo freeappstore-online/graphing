@@ -1,0 +1,18 @@
+{
+  "name": "freegraphingapp",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": { "node": ">=22" },
+  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "scripts": {
+    "dev": "pnpm --filter @graphing/web dev",
+    "build": "pnpm --filter @graphing/web build",
+    "preview": "pnpm --filter @graphing/web preview",
+    "typecheck": "pnpm --filter @graphing/web exec tsc -b",
+    "test": "pnpm --filter @graphing/web test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeappstore-online/graphing.git"
+  }
+}
