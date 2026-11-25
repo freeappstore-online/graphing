@@ -34,10 +34,8 @@ export default function Sidebar({
 }: Props) {
   return (
     <aside
-      className="flex flex-col gap-4 overflow-y-auto border-r"
+      className="flex flex-col gap-4 overflow-y-auto shrink-0 w-full max-h-[45vh] border-b md:w-80 md:max-h-none md:border-b-0 md:border-r"
       style={{
-        width: 320,
-        minWidth: 280,
         background: "var(--panel)",
         borderColor: "var(--line)",
         padding: "16px",

@@ -56,7 +56,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="flex h-screen w-screen overflow-hidden" style={{ background: "var(--paper)" }}>
+    <div className="flex flex-col md:flex-row h-screen w-screen overflow-hidden" style={{ background: "var(--paper)" }}>
       {/* Sidebar */}
       <Sidebar
         slots={slots}
@@ -75,7 +75,7 @@ export default function App() {
       />
 
       {/* Main area */}
-      <div className="flex flex-col flex-1 min-w-0">
+      <div className="flex flex-col flex-1 min-w-0 min-h-0">
         {/* Canvas */}
         <GraphCanvas
           slots={slots}
